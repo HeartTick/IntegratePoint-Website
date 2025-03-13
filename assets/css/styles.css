@@ -135,7 +135,7 @@
 
   .dropdown-menu {
       position: static;
-      background-color: #008380;
+      background-color: #006463;
       display: none;
       /* changes as per the nav ,, text issue */
       z-index: 1000;
@@ -350,264 +350,90 @@
 }
 
 /* ----------------------------About US Section------------------------ */
-.sec4{
-  height: auto;
-}
-.about-us-section {
-  /* height: 2pc; */
-  padding: 50px 20px;
-  background-color: #ffffff;
-  text-align: justify;
-  display: flex;
-  flex-direction: row;
-   
-  
-}
-.sideImg{
-  max-width: 50%;
-  margin-top: 40px;
-  margin-left: 90px;
-
-}
-.sideImg img{
-  width:32rem ;
-  max-height: 30rem;
  
+/*--------------------- Service Insights Section------------------*/
+.service-insights-section {
+  padding: 20px 20px;
+  background-color: #ffffff; /* White background */
 }
-.about-us-container {
-  max-width: 40pc;
-  max-height: 35pc;
+
+.service-insights-container {
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 10px;
- 
-  float: right;
- 
- 
-  
+  display: flex;
+  align-items: center;
+  gap: 60px; /* Space between image and text */
+  text-align: justify;
 }
 
-.about-us-section h2 {
-  font-size: 2rem;
-  color: #005B5A;
+/* Image Container */
+.image-container {
+  flex: 1;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+/* Text Container */
+.text-container {
+  flex: 1;
+}
+
+.text-container h2 {
+  font-size: 2.3rem;
+  color: #005B5A; /* Primary color */
   margin-bottom: 10px;
-  
 }
 
-.about-us-section h1 {
-  font-size: 2.5rem;
-  color: #005B5A;
+.text-container h3 {
+  font-size: 1.7rem;
+  color: #333; /* Dark text color */
   margin-bottom: 20px;
 }
 
-.about-us-section p {
+.text-container p {
   font-size: 1.3rem;
-  color: #555;
+  color: #555; /* Medium text color */
   line-height: 1.6;
-  margin-bottom: 20px;
-   
-  text-align: justify ;
-}
-
-.about-us-section strong {
-  color: #005B5A;
 }
 @media (max-width:786px) {
-  .sideImg img{
+  .service-insights-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px; /* Space between image and text */
+      text-align: justify;
+  }
+  .text-container h2 {
+      font-size: 1.5rem;
+      color: #005B5A; /* Primary color */
+      margin-bottom: 5px;
+  }
+  
+  .text-container h3 {
+      font-size: 1.3rem;
+      color: #333; /* Dark text color */
+      margin-bottom: 20px;
+  }
+  
+  .text-container p {
+      font-size: 1rem;
+      color: #555; /* Medium text color */
+      line-height: 1.3;
+  }
+  .image-container img{
     display: none;
   }
-  .about-us-section {
-   
-    padding: 10px 10px;
-    background-color: #ffffff;
-    text-align: justify;
-    display: inline-block;
-    flex-direction: row-reverse;
-     
-    
-  }
-  .about-us-container {
-    max-width: 40pc;
-    max-height: 35pc;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    float: right;
-  }
   
-  .about-us-section h2 {
-    font-size: 1.5rem;
-    color: #005B5A;
-    /* margin-bottom: 10px; */
-    
-  }
-  
-  .about-us-section h1 {
-    font-size: 2.0rem;
-    color: #005B5A;
-    /* margin-bottom: 20px; */
-  }
-  
-  .about-us-section p {
-    font-size: 1.1rem;
-    color: #555;
-    line-height: 1.4;
-    margin-bottom: 20px;
-    text-align: justify ;
-  }
-}
-@media (max-width:950px) {
-  .sideImg img{
-    display: none;
-  }
 }
 /*------------------------- Uniqueness Section------------------------ */
-.uniqueness-section {
-  padding: 0px 50px;
-  background-color: #ffffff;
-  /* text-align: justify; */
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  /* align-items: center; */
-}
-
-.uniqueness-container {
-  max-width: 600px;
-  /* margin: 0 auto; */
-  /* padding: 20px; */
-  background-color: white;
-  /* border: 2px solid black; */
-   
+/* uniqueness code is same as above */
  
-}
-
-.uniqueness-section h2 {
-  font-size: 2rem;
-  color: #005B5A;
-  margin-bottom: 10px;
-}
-
-.uniqueness-section h1 {
-  font-size: 2.5rem;
-  color: #005B5A;
-  margin-bottom: 20px;
-}
-
-.uniqueness-section p {
-  font-size: 1.3rem;
-  color: #555;
-  line-height: 1.6;
-  margin-bottom: 20px;
-  text-align: left;
-}
-
-.uniqueness-section strong {
-  color: #005B5A;
-}
-
-.uniqueness-list {
-  text-align: left;
-  list-style-type: none;
-  padding: 0;
-  margin-bottom: 20px;
-}
-
-.uniqueness-list li {
-  font-size: 1.1rem;
-  color: #555;
-  line-height: 1.6;
-  margin-bottom: 10px;
-}
-
-.uniqueness-list li strong {
-  color: #005B5A;
-}
-
-.uniqueness-footer {
-  font-size: 1.1rem;
-  color: #005B5A;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 20px;
-}
-.uniqueness-section-container1{
-  width: 200px;
-}
- 
- 
-.uniqueness-section-container1 img{
-  margin-top: 11pc;
-  margin-left: 6pc; 
-}
-@media(max-width: 768px) {
-  .uniqueness-section-container1 img{
-    display: none;
-  }
-  .uniqueness-section{
-    padding: 0;
-    padding-left: 20px;
-  }
-  .uniqueness-section h2 {
-    font-size: 1.0rem;
-    color: #005B5A;
-    
-  }
-  .uniqueness-section h1 {
-    font-size: 2rem;
-    color: #005B5A;
-    /* margin-bottom: 20px; */
-  }
-  .uniqueness-section p {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.2;
-    margin-bottom: 20px;
-    text-align: left;
-  }
-  
-}
-
-@media (max-width : 950px) {
-  .uniqueness-section-container1 img{
-    display: none;
-  }
-  .uniqueness-container{
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    text-align: justify;
-    /* align-items: center; */
-    
-  
-  }
-  .uniqueness-section{
-    padding: 0;
-    padding-left: 30px;
-  }
-  .uniqueness-section h2 {
-    font-size: 1.4rem;
-    color: #005B5A;
-  
-    
-  }
-  .uniqueness-section h1 {
-    font-size: 2rem;
-    color: #005B5A;
-    /* margin-bottom: 20px; */
-  }
-  .uniqueness-section p {
-    
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.2;
-    margin-bottom: 10px;
-    text-align: left;
-  }
-}
-
 /* ------------------------Footer Section Code-------------------------- */
 /* General Styles */
  
